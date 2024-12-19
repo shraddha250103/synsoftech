@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Frequently Asked Questions</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #1E90FF);
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #000;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-container h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2C3E50;
+        }
+
+        /* Accordion Styles */
+        .accordion {
+            margin-bottom: 15px;
+        }
+
+        .accordion-item {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-item:hover {
+            background-color: #3B8D95;
+            color: white;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* Customer Support Section */
+        .customer-support {
+            background-color: #2C3E50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .customer-support h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .customer-support p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .customer-support a {
+            color: #1E90FF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .customer-support a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .faq-container {
+                padding: 20px;
+            }
+
+            .customer-support {
+                padding: 30px 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Frequently Asked Questions (FAQs)</h1>
+        <p>Your questions, answered quickly!</p>
+    </header>
+
+    <div class="faq-container">
+        <h2>FAQs</h2>
+
+        <!-- Accordion for FAQ Items -->
+        <div class="accordion">
+            <div class="accordion-item" onclick="toggleAccordion(0)">
+                <strong>What services do you offer?</strong>
+            </div>
+            <div class="accordion-content">
+                <p>We offer a variety of services, including website development, digital marketing, SEO optimization, and branding. We customize our services based on your business needs.</p>
+            </div>
+
+            <div class="accordion-item" onclick="toggleAccordion(1)">
+                <strong>How much do your services cost?</strong>
+            </div>
+            <div class="accordion-content">
+                <p>Pricing depends on the complexity of the project and the services you require. Please reach out to us with your specific needs for a personalized quote.</p>
+            </div>
+
+            <div class="accordion-item" onclick="toggleAccordion(2)">
+                <strong>What is the typical timeline for a project?</strong>
+            </div>
+            <div class="accordion-content">
+                <p>The timeline varies depending on the project scope. A small website might take 4–6 weeks, while larger, custom-built platforms could take several months. We will provide a detailed timeline once we understand your needs.</p>
+            </div>
+
+            <div class="accordion-item" onclick="toggleAccordion(3)">
+                <strong>Do you provide ongoing support after the project?</strong>
+            </div>
+            <div class="accordion-content">
+                <p>Yes, we offer post-launch support for maintenance, updates, and troubleshooting. We can also provide ongoing digital marketing and SEO services.</p>
+            </div>
+
+            <div class="accordion-item" onclick="toggleAccordion(4)">
+                <strong>Can I get a free consultation?</strong>
+            </div>
+            <div class="accordion-content">
+                <p>Yes, we offer free initial consultations. During the consultation, we will assess your needs and provide recommendations for your project.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Support Section -->
+    <div class="customer-support">
+        <h3>Need More Help?</h3>
+        <p>If you have more questions or need further assistance, our support team is here for you!</p>
+        <p>You can reach us through the following methods:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p>Or click below for live support:</p>
+        <p><a href="javascript:void(0);" onclick="alert('Live Chat is currently unavailable')">Start Live Chat</a></p>
+    </div>
+
+    <script>
+        // Function to toggle accordion content
+        function toggleAccordion(index) {
+            const content = document.getElementsByClassName('accordion-content')[index];
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

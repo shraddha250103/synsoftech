@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SYN Softech Solutions</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: linear-gradient(to right, #3E2723, #000000); /* Brown-Black Gradient */
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #B71C1C; /* Red background for header */
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-block {
+            background-color: #3E2723; /* Dark Brown background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-block:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-block h3 {
+            margin-top: 15px;
+            font-size: 1.6rem;
+            color: #ffab00; /* Yellow accent */
+        }
+
+        .project-block p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .project-block ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .project-block ul li {
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #B71C1C; /* Red for buttons */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #8e0000; /* Darker red on hover */
+        }
+
+        /* Case Studies Section */
+        .case-studies-section {
+            padding: 50px 20px;
+            background-color: #212121; /* Dark background for case studies */
+            color: #fff;
+        }
+
+        .case-study {
+            background-color: #3E2723; /* Dark Brown for case study blocks */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .case-study:hover {
+            transform: translateY(-10px);
+        }
+
+        .case-study h3 {
+            font-size: 1.8rem;
+            color: #ffab00; /* Yellow accent */
+            margin-bottom: 10px;
+        }
+
+        .case-study p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .case-study .btn {
+            background-color: #B71C1C;
+            padding: 10px 20px;
+        }
+
+        /* Icons Styling */
+        .case-study .icon {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #ffab00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-block h3 {
+                font-size: 1.4rem;
+            }
+
+            .case-study h3 {
+                font-size: 1.6rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Portfolio</h1>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <h2 style="text-align:center; color:#ffab00;">Featured Projects</h2>
+
+        <div class="portfolio-grid">
+
+            <!-- Project 1 -->
+            <div class="project-block">
+                <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                <h3>Website Development Project</h3>
+                <p>This project involved building a responsive e-commerce website for a retail client.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> HTML5, CSS3, JavaScript, React</li>
+                    <li><strong>Client:</strong> Retail Client</li>
+                </ul>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-block">
+                <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                <h3>Mobile App Development</h3>
+                <p>A mobile app built for a fitness company to help users track their workouts.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> React Native, Firebase</li>
+                    <li><strong>Client:</strong> Fitness Company</li>
+                </ul>
+                <a href="#" class="btn">View App</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-block">
+                <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                <h3>Custom Software Solution</h3>
+                <p>Developed a custom CRM system for a B2B company to streamline operations.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> Python, Django, PostgreSQL</li>
+                    <li><strong>Client:</strong> B2B Company</li>
+                </ul>
+                <a href="#" class="btn">See More Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies-section">
+        <h2 style="text-align:center; color:#ffab00;">Case Studies</h2>
+
+        <div class="case-study">
+            <h3><i class="icon">&#x1F4C8;</i> E-Commerce Website Redesign</h3>
+            <p><strong>Client:</strong> XYZ Retail</p>
+            <p><strong>Challenge:</strong> The client's website was outdated, non-responsive, and lacked SEO optimization. Sales were declining due to poor user experience.</p>
+            <p><strong>Solution:</strong> SYN Softech redesigned the website using a modern, responsive design. We implemented SEO strategies to improve search rankings and optimize conversion rates.</p>
+            <p><strong>Results:</strong> The website saw a 40% increase in traffic and a 25% increase in sales in the first three months.</p>
+            <a href="#" class="btn">Read Full Case Study</a>
+        </div>
+
+        <div class="case-study">
+            <h3><i class="icon">&#x1F4BB;</i> Custom CRM Development</h3>
+            <p><strong>Client:</strong> ABC Business Solutions</p>
+            <p><strong>Challenge:</strong> The client struggled with a disconnected sales pipeline, causing inefficiencies and errors in order processing.</p>
+            <p><strong>Solution:</strong> We developed a custom CRM that integrated sales tracking, invoicing, and client management in one seamless platform.</p>
+            <p><strong>Results:</strong> The client saw a 30% reduction in errors and a 15% increase in sales team productivity.</p>
+            <a href="#" class="btn">Explore the Solution</a>
+        </div>
+
+    </section>
+
+</body>
+</html>

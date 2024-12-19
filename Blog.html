@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SYN Softech Solutions</title>
+    <style>
+ 
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #e91e63, #9c27b0, #3e2723); /* Red, Pink, Maroon Gradient */
+            color: #fff;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #880e4f; /* Maroonish red */
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Blog Section */
+        .blog-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Latest Posts Grid */
+        .latest-posts {
+            flex: 1 1 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .post {
+            background-color: #f8bbd0; /* Light pink background for posts */
+            padding: 30px;
+            border-radius: 50px; /* Oval shape */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .post h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #880e4f;
+        }
+
+        .post p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #880e4f;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 25px; /* Oval shape for button */
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c2185b; /* Slightly lighter red */
+        }
+
+        /* Search & Categories Grid */
+        .search-categories {
+            flex: 1 1 28%;
+            background-color: #b39ddb; /* Light purple */
+            padding: 30px;
+            border-radius: 50px; /* Oval shape */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .search-categories h4 {
+            font-size: 1.4rem;
+            color: #880e4f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .search-categories input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 25px; /* Oval shape for input */
+            border: none;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .search-categories input[type="text"]:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(136, 14, 79, 0.8);
+        }
+
+        .category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-list li {
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
+
+        .category-list li a {
+            text-decoration: none;
+            color: #880e4f;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .category-list li a:hover {
+            color: #c2185b;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .latest-posts, .search-categories {
+                flex: 1 1 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Blog</h1>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <!-- Latest Posts Section -->
+        <div class="latest-posts">
+            <!-- Post 1 -->
+            <div class="post">
+                <h3>How SEO Impacts Your Business</h3>
+                <p>In today's digital landscape, SEO is crucial for businesses looking to increase their visibility and attract more customers. Learn how to optimize your site for search engines and the best practices for improving your ranking...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="post">
+                <h3>Trends in Mobile App Development</h3>
+                <p>Mobile app development is evolving rapidly. Discover the latest trends that are shaping the future of mobile applications, including AI integration, cross-platform development, and more...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="post">
+                <h3>Best Practices for Web Development</h3>
+                <p>From responsive design to code optimization, explore the best practices every web developer should follow to create fast, user-friendly websites that rank well in search engines...</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <!-- Search & Categories Section -->
+        <div class="search-categories">
+            <!-- Search Bar -->
+            <h4>Search Blog Posts</h4>
+            <input type="text" placeholder="Search for articles...">
+
+            <!-- Categories List -->
+            <h4>Categories</h4>
+            <ul class="category-list">
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">SEO & Digital Marketing</a></li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li><a href="#">Design & UX</a></li>
+                <li><a href="#">Technology News</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>

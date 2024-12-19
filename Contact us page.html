@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #6a4c9c;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Container for the main content */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 50px;
+        }
+
+        .contact-form, .contact-info, .live-chat {
+            width: 32%;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #6a4c9c;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button:hover {
+            background-color: #57306a;
+        }
+
+        /* Contact Info Section */
+        .contact-info h3, .live-chat h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p, .live-chat p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #6a4c9c;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #57306a;
+        }
+
+        /* Live Chat Section */
+        .live-chat {
+            background: linear-gradient(45deg, #6a4c9c, #9e4f6e, #603c40);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .live-chat::before {
+            content: '💬';
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .live-chat p {
+            font-size: 1.2em;
+        }
+
+        .live-chat button {
+            background-color: white;
+            color: #6a4c9c;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .live-chat button:hover {
+            background-color: #ddd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .contact-form, .contact-info, .live-chat {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for inquiries, support, or suggestions</p>
+    </header>
+
+    <div class="contact-container">
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h3>Contact Form</h3>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <select name="inquiry-type">
+                    <option value="website-development">Website Development</option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="seo-services">SEO Services</option>
+                    <option value="other">Other</option>
+                </select>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+            <h3>Our Location & Info</h3>
+            <p><strong>Email:</strong> info@example.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Example Street, City, Country</p>
+            <h4>Follow Us:</h4>
+            <p>
+                <a href="https://facebook.com" target="_blank">Facebook</a> | 
+                <a href="https://twitter.com" target="_blank">Twitter</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+
+        <!-- Live Chat Section -->
+        <div class="live-chat">
+            <h3>Need Assistance?</h3>
+            <p>Click below to start a live chat with us or our automated assistant.</p>
+            <button onclick="alert('Live Chat Feature Coming Soon!')">Start Live Chat</button>
+        </div>
+    </div>
+
+</body>
+</html>

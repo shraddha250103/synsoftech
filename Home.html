@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>SYN SOFTECH SOLUTIONS</title>
+  <title>Notification Bar</title>
+
+  <style>
+    /* Apply the background image to the body */
+    body {
+      margin: 0;
+      height: 100vh; /* Set the height of the body to the full viewport height */
+      background-image: url('Hero.jpg'); /* Path to your background image */
+      background-size: cover; /* Ensure the image covers the entire screen */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+  </style>
+
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #003366;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Services Section */
+
+    body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(45deg, white, black);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px 0;
+    }
+
+    .services .service-item {
+      background-color: #222;
+      padding: 20px;
+      margin: 15px;
+      text-align: center;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 300px;
+    }
+
+    .services .icon {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .services h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .services p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    /* Why Choose Us Section */
+    .why-choose-us {
+      background-color: #003366;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 4rem;
+    }
+
+    .why-choose-us h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .why-choose-us p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+    }
+
+    .why-choose-us ul {
+      list-style: none;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    .why-choose-us li {
+      margin-bottom: 10px;
+    }
+
+    /* Testimonial Section */
+    .testimonial-carousel {
+      padding: 50px 20px;
+      background-color: #222;
+      text-align: center;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      overflow-x: scroll;
+      gap: 20px;
+    }
+
+    .testimonial {
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 8px;
+    }
+
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .testimonial p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .testimonial span {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #003366;
+      color: #ddd;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer-links a,
+    .social-media a {
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    .footer-links a:hover,
+    .social-media a:hover {
+      color: #007bff;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .services .service-item {
+        width: 80%;
+      }
+
+      .services {
+        padding: 20px;
+      }
+
+      .testimonial-carousel {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+  <!-- Notification Bar -->
+  <div id="notificationBar" class="notification-bar">
+    New update available! <a href=""C:\Users\SHRADDHA\OneDrive\Desktop\synsoftech\About Us Page.html"" target="_blank">Click here to run the update</a>
+    <div class="contact-blog">Contact Blog: <a href="C:\Users\SHRADDHA\OneDrive\Desktop\synsoftech\Contact us page.html" target="_blank">Visit our blog</a></div>
+  </div>
+
+  <!-- Button to simulate triggering the notification -->
+  <button onclick="showNotification()">Show Notification</button>
+
+  <script>
+    // Function to show the notification bar
+    function showNotification() {
+      var notificationBar = document.getElementById("notificationBar");
+      notificationBar.classList.add("show");
+
+      // Hide the notification after 5 seconds
+      setTimeout(function() {
+        notificationBar.classList.remove("show");
+      }, 5000);
+    }
+  </script>
+
+
+  <!-- Header Section -->
+  <header>
+    <h1>SYN SOFTECH SOLUTIONS</h1>
+    <h2>Empowering Your Digital Transformation</h2>
+
+
+    <div class="button-container">
+      <button class="btn" onclick="window.location.href='About Us Page.html';">About Us</button>
+      <button class="btn" onclick="window.location.href='Blog.html';">Blog</button>
+      <button class="btn" onclick="window.location.href='Contact us page.html';">Contact Us</button>
+      <button class="btn" onclick="window.location.href='Faq page.html';">FAQ </button>
+      <button class="btn" onclick="window.location.href='Our services.html';">Our Services</button>
+      <button class="btn" onclick="window.location.href='Portfolio.html';">Portfolio</button>
+  </div>
+
+  <script>
+    // Get the button element
+    const button = document.getElementById('openButton');
+
+    // Add a click event listener to the button
+    button.addEventListener('click', function() {
+        // Open a new window/tab with the desired HTML document
+        window.open('C:\Users\SHRADDHA\OneDrive\Desktop\synsoftech\About Us Page.html', '_blank');
+    });
+</script>
+
+  <style>
+    /* Basic button styling */
+    .btn {
+        background-color: #008CBA; /* Blue *//* Initial color */
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        border: none;
+        width: 200px; /* Set a consistent width */
+    }
+
+    .btn:hover {
+        background-color: black; /* Darker blue on hover */
+    }
+
+    /* Align buttons in a row */
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+</style>
+
+  </header>
+
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="service-item">
+      <div class="icon">🌐</div>
+      <h3>Website Development</h3>
+      <p>Crafting seamless websites that drive results.</p>
+    </div>
+    <div class="service-item">
+      <div class="icon">💻</div>
+      <h3>Software Development</h3>
+      <p>Building robust software solutions to scale your business.</p>
+    </div>
+    <div class="service-item">
+      <div class="icon">🎨</div>
+      <h3>Graphics Designing</h3>
+      <p>Creating visually compelling designs to captivate your audience.</p>
+    </div>
+    <div class="service-item">
+      <div class="icon">📊</div>
+      <h3>Digital Marketing</h3>
+      <p>Enhancing your online presence with targeted strategies.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color:black;
+    }
+
+    .services {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 50px 20px;
+
+    }
+
+    .service-item {
+      background-color: #050505;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .service-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-item a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #f3f1f1;
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #666;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    /* Hover effect for icon */
+    .service-item:hover .icon {
+      color: #3498db;
+    }
+  </style>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us">
+    <h>Why Choose Us?</h>
+    <style>
+
+      /* Styling for the grid container */
+      .grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates responsive columns */
+        gap: 20px; /* Space between grid items */
+        list-style-type: none; /* Removes default list styling */
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Styling for each list item */
+      .grid-container li {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Hover effect for list items */
+      .grid-container li:hover {
+        background-color: black;
+      }
+    </style>
+
+    <ul class="grid-container">
+      <li>Expertise in diverse technologies</li>
+      <li>Innovative solutions tailored to your needs</li>
+      <li>Customer-centric approach</li>
+      <li>On-time delivery, every time</li>
+    </ul>
+
+  </section>
+
+<!--  use ID not class name oky  -->
+  <script>
+      const carousel = document.querySelector('.carousel');
+      const prevButton = document.getElementById('prev');
+      const nextButton = document.getElementById('next');
+      let index = 0;
+
+      function updateCarousel() {
+          carousel.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      prevButton.addEventListener('click', () => {
+          if (index > 0) {
+              index--;
+              updateCarousel();
+          }
+      });
+
+      nextButton.addEventListener('click', () => {
+          if (index < 3) {
+              index++;
+              updateCarousel();
+          }
+      });
+  </script>
+
+  </body>
+  </html>
+
+
+
+  <!-- Footer Section -->
+
+  <footer>
+    <div class="footer-links">
+      <a href="#" class="button-link">Home</a>
+      <a href="#" class="button-link">Services</a>
+      <a href="#" class="button-link">About Us</a>
+      <a href="#" class="button-link">Contact</a>
+    </div>
+
+    <div class="social-media">
+      <a href="#">FB</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div class="contact-info">
+      <p>Contact us: info@synsoftech.com</p>
+      <p>Phone: +123-456-7890</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

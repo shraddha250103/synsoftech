@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SYN Softech Solutions</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* About Us Section */
+        .about-us {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Heading */
+        .heading {
+            font-size: 3rem;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Introduction Block */
+        .intro-block {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        .intro-block h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .intro-block p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .intro-block strong {
+            font-weight: bold;
+        }
+
+        /* Our Team Block */
+        .team-block {
+            margin-bottom: 40px;
+        }
+
+        .team-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            flex: 1;
+        }
+
+        .team-member img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 2px solid #fff;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Our Process Block */
+        .process-block {
+            margin-bottom: 40px;
+        }
+
+        .process-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-step {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .process-step .icon img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .process-step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .process-step p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team-members {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .heading {
+                font-size: 2rem;
+            }
+
+            .team-block h2, .process-block h2 {
+                font-size: 2rem;
+            }
+
+            .team-member h3 {
+                font-size: 1.2rem;
+            }
+
+            .process-step h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <section class="about-us">
+        <!-- About Us Heading -->
+        <h1 class="heading">ABOUT US</h1>
+
+        <!-- Introduction Block -->
+        <div class="intro-block">
+            <h2>Welcome to SYN Softech Solutions</h2>
+            <p>
+                SYN Softech Solutions is a leading provider of innovative tech solutions aimed at empowering businesses with cutting-edge technology. Our mission is to deliver high-quality software solutions that drive digital transformation and enhance business operations. We are committed to excellence, and our approach is rooted in our core values of integrity, collaboration, and innovation.
+            </p>
+            <p><strong>Mission:</strong> To provide businesses with superior tech solutions that enable growth and efficiency through innovation.</p>
+            <p><strong>Vision:</strong> To be the most trusted technology partner, revolutionizing industries through intelligent software solutions.</p>
+            <p><strong>Core Values:</strong> Innovation, Excellence, Integrity, Collaboration, Customer-Centricity.</p>
+        </div>
+
+        <!-- Our Team Block -->
+        <div class="team-block">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="components\Img\sohum patel img.jpg" alt="Team Member 1">
+                    <h3>Sohum Patel</h3>
+                    <p><strong>Role:</strong> CEO</p>
+                    <p>Sohum is the visionary behind SYN Softech Solutions. With over 15 years of experience in the tech industry, he leads the team with a passion for innovation and strategic thinking.</p>
+                </div>
+                <div class="team-member">
+                    <img src="components\Img\sakshi syn.jpg" alt="Team Member 2">
+                    <h3>Sakshi Chaudhary</h3>
+                    <p><strong>Role:</strong> CTO</p>
+                    <p>Sakshi is an expert in cloud technologies and software architecture. She is responsible for overseeing the technical direction of the company and ensuring that we remain at the forefront of innovation.</p>
+                </div>
+                <div class="team-member">
+                    <img src="components\Img\arpit syn.jpg" alt="Team Member 3">
+                    <h3>Arpit Solanki</h3>
+                    <p><strong>Role:</strong> Head of Marketing</p>
+                    <p>Arpit leads our marketing team, focusing on brand growth and outreach. His expertise in digital marketing helps position SYN Softech Solutions as a leading tech innovator.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Process Block -->
+        <div class="process-block">
+            <h2>Our Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="icon">
+                    <img src="logo.jpeg" alt="Design Icon">
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>We start with understanding your business needs, analyzing challenges, and offering tailored solutions to drive growth.</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon">
+                        <img src="logo.jpeg" alt="Design Icon">
+                    </div>
+                    <h3>Design</h3>
+                    <p>Our expert designers create intuitive and user-friendly interfaces that align with your brand and business goals.</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon">
+                        <img src="https://via.placeholder.com/50" alt="Launch Icon">
+                    </div>
+                    <h3>Launch</h3>
+                    <p>We deploy your solution with precision, ensuring smooth integration and launch for maximum impact.</p>
+                </div>
+                <div class="process-step">
+                    <div class="icon">
+                        <img src="https://via.placeholder.com/50" alt="Support Icon">
+                    </div>
+                    <h3>Support</h3>
+                    <p>We offer ongoing support to ensure your solutions continue to perform at their best, with regular updates and troubleshooting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - SYN Softech Solutions</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(to right, #00aaff, #34eb7a); /* Blue to Green */
+        }
+
+        /* Header Styling */
+        .services-header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Service Section */
+        .service-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Individual Service Block */
+        .service-block {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-block:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-block h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #00aaff;
+        }
+
+        .service-block p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .service-block ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .service-block ul li {
+            margin-bottom: 10px;
+        }
+
+        .service-block .btn {
+            display: inline-block;
+            background-color: #00aaff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .service-block .btn:hover {
+            background-color: #0088cc;
+        }
+
+        /* Color for specific sections */
+        .software {
+            background-color: #D2691E; /* Brown */
+        }
+
+        .graphic-design {
+            background-color: #f1f1f1; /* Light grey */
+        }
+
+        .digital-marketing {
+            background-color: #2c3e50; /* Dark grey */
+            color: #fff;
+        }
+
+        .social-media {
+            background-color: #3498db; /* Blue */
+            color: #fff;
+        }
+
+        .website-dev {
+            background-color: #28a745; /* Green */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-block h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Services Header -->
+    <header class="services-header">
+        <h1>Our Services</h1>
+    </header>
+
+    <!-- Services Section -->
+    <section class="service-section">
+        <div class="service-grid">
+
+            <!-- Website Development -->
+            <div class="service-block website-dev">
+                <h3>Website Development</h3>
+                <p>We build responsive websites with a focus on user experience, performance, and SEO optimization. Our solutions are built to scale and adapt to your business needs.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> HTML5, CSS3, JavaScript, WordPress, React, etc.</li>
+                    <li><strong>Examples:</strong> E-commerce websites, business websites, landing pages.</li>
+                </ul>
+                <a href="#" class="btn">See Our Projects</a>
+            </div>
+
+            <!-- Software Development -->
+            <div class="service-block software">
+                <h3>Custom Software Solutions</h3>
+                <p>We provide custom software solutions tailored to your business requirements, from enterprise applications to mobile apps. Our goal is to improve efficiency and productivity through technology.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> Python, Java, .NET, Node.js, etc.</li>
+                    <li><strong>Case Studies:</strong> Inventory management systems, CRM systems.</li>
+                </ul>
+                <a href="#" class="btn">View Case Studies</a>
+            </div>
+
+            <!-- Mobile App Development -->
+            <div class="service-block">
+                <h3>Mobile App Development</h3>
+                <p>Our mobile app development services deliver high-quality apps for both iOS and Android platforms. We use the latest technologies to create fast, scalable, and interactive mobile experiences.</p>
+                <ul>
+                    <li><strong>Technologies:</strong> React Native, Flutter, Kotlin, Swift.</li>
+                </ul>
+                <a href="#" class="btn">Explore Our Apps</a>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="service-block graphic-design">
+                <h3>Creative Design Services</h3>
+                <p>We offer creative design services, including branding, logo design, and UI/UX design. Our designs are user-centered and aimed at building a strong brand presence.</p>
+                <ul>
+                    <li><strong>Services:</strong> Branding, Logo design, Web & App UI/UX.</li>
+                    <li><strong>Examples:</strong> Website mockups, logo samples, app interfaces.</li>
+                </ul>
+                <a href="#" class="btn">View Our Designs</a>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="service-block digital-marketing">
+                <h3>Digital Marketing</h3>
+                <p>We help businesses grow online through SEO, SEM, email marketing, paid ads, and content marketing. Our goal is to drive traffic, increase conversions, and improve ROI.</p>
+                <ul>
+                    <li><strong>Services:</strong> SEO, SEM, content marketing, paid ads.</li>
+                    <li><strong>Examples:</strong> Google Ads campaigns, social media strategies.</li>
+                </ul>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+
+            <!-- Social Media Marketing -->
+            <div class="service-block social-media">
+                <h3>Social Media Strategy & Management</h3>
+                <p>We provide social media marketing services to build your brand, engage with customers, and drive traffic to your website. Our services cover platforms like Facebook, Instagram, and LinkedIn.</p>
+                <ul>
+                    <li><strong>Platforms:</strong> Facebook, Instagram, LinkedIn, Twitter.</li>
+                    <li><strong>Services:</strong> Social media campaigns, analytics, branding, engagement.</li>
+                </ul>
+                <a href="#" class="btn">View Our Strategy</a>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
